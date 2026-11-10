@@ -129,3 +129,27 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+.job-market {
+  padding: 12px 15px;
+  border-left: 3px solid #1772a7;
+  background: #eff6fa;
+  line-height: 1.5;
+}
+
+.paper-figure, .paper-description {
+  padding: 16px 20px;
+  vertical-align: middle;
+}
+
+.paper-figure { width: 25%; }
+.paper-figure img { width: 100%; height: auto; }
+.paper-description { line-height: 1.45; }
+
+@media (max-width: 600px) {
+  .bio-row { display: flex; flex-direction: column-reverse; align-items: center; }
+  .bio-row > td:first-child { width: 95% !important; }
+  .bio-row > td:last-child { max-width: 125px !important; }
+  .paper-figure, .paper-description { padding: 10px; }
+  .one, .two { width: 85px; height: auto; }
+  .one img, .two img { max-width: 85px; }
+}
